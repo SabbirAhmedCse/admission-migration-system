@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import { AiOutlineHome } from "react-icons/ai";
+import { ImList2 } from "react-icons/im";
 import { FcServices, FcAbout } from "react-icons/fc";
 import { MdOutlineDashboardCustomize } from "react-icons/md";
 const SideNavbar = () => {
@@ -16,6 +17,9 @@ const SideNavbar = () => {
             <div className="mt-2 text-start ps-4">
             <Link to="/" style={{textDecoration: "none"}}><h6 style={blockquote} className="d-block">
               <AiOutlineHome></AiOutlineHome> Home
+            </h6></Link>
+            <Link to="/applicant-list" style={{textDecoration: "none"}}><h6 style={blockquote} className="d-block">
+              <ImList2></ImList2> ApplicantList
             </h6></Link>
             <Link to="/dashboard" style={{textDecoration: "none"}}><h6 style={blockquote} className="d-block">
               <MdOutlineDashboardCustomize></MdOutlineDashboardCustomize> Dashboard

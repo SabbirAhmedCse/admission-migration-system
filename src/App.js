@@ -11,6 +11,7 @@ import FacultyCharts from './Component/FacultyCharts/FacultyCharts';
 import Navbar from './Component/Navbar.js/Navbar';
 import StudentsChart from './Component/StudentsChart/StudentsChart';
 import DepartmentsCharts from './Component/DepartmentChart/DepartmentsCharts';
+import ApplicantList from './Component/ApplicantList/ApplicantList';
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
           </Route>
           <Route  path='/students-chart'>
             <StudentsChart /> 
+          </Route>
+          <Route  path='/applicant-list'>
+            <ApplicantList></ApplicantList>
           </Route>
         </Switch>
       </Router>

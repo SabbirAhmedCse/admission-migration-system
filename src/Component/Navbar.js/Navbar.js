@@ -7,7 +7,7 @@ const Navbar = () => {
                 <img
               src="http://dipongkor-002-site7.itempurl.com/img/just2.png"
               alt="logo"
-              style={{ height: "100px"}}
+              style={{ height: "100px", width: "auto" }}
             />
             </div>
             <div className="col-md-10">
