@@ -19,7 +19,7 @@ const SideNavbar = () => {
               <AiOutlineHome></AiOutlineHome> Home
             </h6></Link>
             <Link to="/applicant-list" style={{textDecoration: "none"}}><h6 style={blockquote} className="d-block">
-              <ImList2></ImList2> ApplicantList
+              <ImList2> </ImList2>  ApplicantList
             </h6></Link>
             <Link to="/dashboard" style={{textDecoration: "none"}}><h6 style={blockquote} className="d-block">
               <MdOutlineDashboardCustomize></MdOutlineDashboardCustomize> Dashboard
