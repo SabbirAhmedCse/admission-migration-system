@@ -8,9 +8,12 @@ const DepartmentsCharts = () => {
     return (
         <div className=" text-center">
             <div className="row">
-                <div style={{height: "400px"}} className="col-md-2 sticky-top p-0 pe-2">
-                    <SideNavbar></SideNavbar>
-                </div>
+            <div
+          style={{height: "400px",}}
+          className="col-md-2 sticky-top p-0"
+        >
+        <div style={{marginRight : "4px"}}><SideNavbar></SideNavbar></div>
+        </div>
                 <div style={{
             boxShadow:
               " 0 3px 6px rgb(0 0 0 / 11%), 0 3px 6px rgb(0 0 0 / 23%)",

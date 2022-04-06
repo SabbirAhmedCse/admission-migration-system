@@ -96,8 +96,11 @@ export default function StudentsChart() {
 
   return (
     <div className="row text-center">
-        <div className='col-md-2'>
-          <SideNavbar></SideNavbar>
+        <div
+          style={{height: "400px"}}
+          className="col-md-2 sticky-top p-0"
+        >
+        <div style={{marginRight : "4px"}}><SideNavbar></SideNavbar></div>
         </div>
         <div  style={{
             boxShadow:

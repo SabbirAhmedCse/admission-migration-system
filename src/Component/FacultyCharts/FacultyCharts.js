@@ -20,8 +20,11 @@ const Charts = () => {
   return (
     <div className=" text-center">
       <div className="row">
-        <div className='col-md-2'>
-          <SideNavbar></SideNavbar>
+      <div
+          style={{height: "400px"}}
+          className="col-md-2 sticky-top p-0"
+        >
+        <div style={{marginRight : "4px"}}><SideNavbar></SideNavbar></div>
         </div>
         
         <div

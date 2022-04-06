@@ -9,7 +9,6 @@ const Documents = () => {
                     <tr>
                       <th>Documents</th>
                       <th>Submit</th>
-                      <th>Submit Date</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -18,27 +17,11 @@ const Documents = () => {
                       <td>
                         <Input type="checkbox" />
                       </td>
-                      <td>
-                        <Input
-                          id="exampleDate"
-                          name="date"
-                          placeholder="date placeholder"
-                          type="date"
-                        />
-                      </td>
                     </tr>
                     <tr>
                       <th scope="row">H.S.C Markseet</th>
                       <td>
                         <Input type="checkbox" />
-                      </td>
-                      <td>
-                        <Input
-                          id="exampleDate"
-                          name="date"
-                          placeholder="date placeholder"
-                          type="date"
-                        />
                       </td>
                     </tr>
                     <tr>
@@ -46,27 +29,11 @@ const Documents = () => {
                       <td>
                         <Input type="checkbox" />
                       </td>
-                      <td>
-                        <Input
-                          id="exampleDate"
-                          name="date"
-                          placeholder="date placeholder"
-                          type="date"
-                        />
-                      </td>
                     </tr>
                     <tr>
                       <th scope="row">GST AdmitCard</th>
                       <td>
                         <Input type="checkbox" />
-                      </td>
-                      <td>
-                        <Input
-                          id="exampleDate"
-                          name="date"
-                          placeholder="date placeholder"
-                          type="date"
-                        />
                       </td>
                     </tr>
                     <tr>
@@ -74,27 +41,11 @@ const Documents = () => {
                       <td>
                         <Input type="checkbox" />
                       </td>
-                      <td>
-                        <Input
-                          id="exampleDate"
-                          name="date"
-                          placeholder="date placeholder"
-                          type="date"
-                        />
-                      </td>
                     </tr>
                     <tr>
                       <th scope="row">Testimonial</th>
                       <td>
                         <Input type="checkbox" />
-                      </td>
-                      <td>
-                        <Input
-                          id="exampleDate"
-                          name="date"
-                          placeholder="date placeholder"
-                          type="date"
-                        />
                       </td>
                     </tr>
                     <tr>
@@ -102,8 +53,12 @@ const Documents = () => {
                       <td>
                         <Input type="checkbox" />
                       </td>
+                    </tr>
+                    <tr>
+                      <th>Remaining Documents Will Be Submit In : </th>
                       <td>
-                        <Input
+                      <Input
+                      required
                           id="exampleDate"
                           name="date"
                           placeholder="date placeholder"

@@ -27,7 +27,8 @@ const SideBar = () => {
           <div className="backImage">
             <br />
             <br />
-
+            <br />
+            
             <h3
               style={{
                 fontSize: "40px",
