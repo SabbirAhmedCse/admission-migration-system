@@ -14,22 +14,27 @@ const SideNavbar = () => {
         boxShadow: "inset 0 -3em 3em rgba(0,0,0,0.1)",
         "0 0  0 2px rgb(255,255,255)": "0.3em 0.3em 1em rgba(0,0,0,0.3)",
       };
+      const Active = (e) => {
+        const url = e.target;
+        url.setAttribute("class","Blockquote");
+        console.log(url);
+      }
     return (
         <div>
             <div className="mt-2 text-start ps-4"> 
-            <Link to="/" style={{textDecoration: "none"}}><h6 style={blockquote} className="d-block">
+            <Link to="/" style={{textDecoration: "none"}}><h6 onClick={(e)=>Active(e)} style={blockquote} >
               <AiOutlineHome className='me-2'></AiOutlineHome> Home
             </h6></Link>
-            <Link to="/applicant-list" style={{textDecoration: "none"}}><h6 style={blockquote} className="d-block">
+            <Link to="/applicant-list" style={{textDecoration: "none"}}><h6 onClick={(e)=>Active(e)} style={blockquote} >
               <ImList2 className='me-2'> </ImList2>  ApplicantList
             </h6></Link>
-            <Link to="/dashboard" style={{textDecoration: "none"}}><h6 style={blockquote} className="d-block">
+            <Link to="/dashboard" style={{textDecoration: "none"}}><h6 onClick={(e)=>Active(e)} style={blockquote} >
               <MdOutlineDashboardCustomize className='me-2'></MdOutlineDashboardCustomize> Dashboard
             </h6></Link>
-            <Link style={{textDecoration: "none"}}><h6 style={blockquote}  className="d-block">
+            <Link style={{textDecoration: "none"}}><h6 onClick={(e)=>Active(e)} style={blockquote} >
               <FcServices className='me-2'></FcServices> Product
             </h6></Link>
-            <Link style={{textDecoration: "none"}}><h6 style={blockquote} className="d-block">
+            <Link style={{textDecoration: "none"}}><h6 onClick={(e)=>Active(e)} style={blockquote}>
               <FcAbout className='me-2'></FcAbout> About
             </h6></Link>
             

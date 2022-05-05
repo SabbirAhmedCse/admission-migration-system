@@ -74,7 +74,7 @@ const FakeData =[
         }
 },
     {
-        studentName : "Aryan Athomic" ,
+        studentName : "Aryan Aotmick" ,
         position: 88,
         SSC : 5,
         AdmissionRoll : 156623,
