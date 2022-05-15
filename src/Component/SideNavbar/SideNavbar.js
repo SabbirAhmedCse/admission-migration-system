@@ -5,6 +5,7 @@ import { AiOutlineHome } from "react-icons/ai";
 import { ImList2 } from "react-icons/im";
 import { FcServices, FcAbout } from "react-icons/fc";
 import { MdOutlineDashboardCustomize } from "react-icons/md";
+import { NavLink } from 'react-router-dom/cjs/react-router-dom.min';
 const SideNavbar = () => {
     const blockquote = {
         padding: "10px 55px",
@@ -22,9 +23,9 @@ const SideNavbar = () => {
     return (
         <div>
             <div className="mt-2 text-start ps-4"> 
-            <Link to="/" style={{textDecoration: "none"}}><h6 onClick={(e)=>Active(e)} style={blockquote} >
+            <NavLink to="/" style={{textDecoration: "none"}}><h6 onClick={(e)=>Active(e)} style={blockquote} >
               <AiOutlineHome className='me-2'></AiOutlineHome> Home
-            </h6></Link>
+            </h6></NavLink>
             <Link to="/applicant-list" style={{textDecoration: "none"}}><h6 onClick={(e)=>Active(e)} style={blockquote} >
               <ImList2 className='me-2'> </ImList2>  ApplicantList
             </h6></Link>
