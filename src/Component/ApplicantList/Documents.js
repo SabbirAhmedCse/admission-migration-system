@@ -167,10 +167,6 @@ class Documents extends Component {
              </td>
             </tr>
             
-
-
-
-
           ))}
            <tr>
              <th>Remaining Documents Will Be Submit In : </th>

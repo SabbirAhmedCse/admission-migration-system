@@ -21,6 +21,11 @@ const FakeData =[
             roll : 15667872,
             regNo: 10120099,
             gpa : 5
+        },
+        addMissionInfo :{
+            physics : 18,
+            chemistry : 13,
+            Math : 14,
         }
 },
     {
@@ -46,6 +51,11 @@ const FakeData =[
             roll : 65551,
             regNo: 155665,
             gpa : 5
+        },
+        addMissionInfo :{
+            physics : 18,
+            chemistry : 13,
+            biology : 14,
         }
 },
     {
@@ -71,6 +81,11 @@ const FakeData =[
             roll : 65551,
             regNo: 155665,
             gpa : 5
+        },
+        addMissionInfo :{
+            physics : 14,
+            chemistry : 15,
+            Math : 16,
         }
 },
     {
@@ -96,6 +111,11 @@ const FakeData =[
             roll : 15656,
             regNo: 16546,
             gpa : 5
+        },
+        addMissionInfo :{
+            physics : 16,
+            chemistry : 13,
+            Math : 16,
         }
 },
     {
@@ -121,6 +141,11 @@ const FakeData =[
             roll : 145223,
             regNo: 123422,
             gpa : 5
+        },
+        addMissionInfo :{
+            physics : 13,
+            chemistry : 13,
+            Math : 14,
         }
 },
     {
@@ -146,6 +171,11 @@ const FakeData =[
             roll : 145223,
             regNo: 123422,
             gpa : 5
+        },
+        addMissionInfo :{
+            physics : 18,
+            chemistry : 13,
+            Math : 14,
         }
 },
     {
@@ -171,6 +201,11 @@ const FakeData =[
             roll : 145223,
             regNo: 123422,
             gpa : 5
+        },
+        addMissionInfo :{
+            physics : 19,
+            chemistry : 13,
+            Math : 14,
         }
 },
     {
@@ -196,6 +231,11 @@ const FakeData =[
             roll : 145223,
             regNo: 123422,
             gpa : 5
+        },
+        addMissionInfo :{
+            physics : 18,
+            chemistry : 13,
+            Math : 11,
         }
 },
     {
@@ -221,6 +261,11 @@ const FakeData =[
             roll : 145223,
             regNo: 123422,
             gpa : 5
+        },
+        addMissionInfo :{
+            physics : 18,
+            chemistry : 13,
+            Biology : 17,
         }
 },
     {
@@ -245,6 +290,11 @@ const FakeData =[
             roll : 13242,
             regNo: 15443,
             gpa : 5
+        },
+        addMissionInfo :{
+            physics : 11,
+            chemistry : 17,
+            Math : 14,
         }
 }]
 export default FakeData;

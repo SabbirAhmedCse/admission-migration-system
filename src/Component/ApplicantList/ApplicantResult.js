@@ -12,6 +12,8 @@ const ApplicantResult = (props) => {
     motherName,
     District,
   } = props.state;
+  const {phy , che, math} = props.state.addMissionInfo;
+  console.log(props.state.addMissionInfo)
   return (
     <>
       <div className="col-3">
@@ -56,6 +58,25 @@ const ApplicantResult = (props) => {
                 <td>2018</td>
                 <td>43</td>
                 <td>JUST</td>
+              </tr>
+            </tbody>
+          </Table>
+        </div>
+        <div>
+          <h1>Admission Score</h1>
+          <Table borderless className="border">
+            <thead>
+              <tr>
+                <th>Physics</th>
+                <th>Chemistry</th>
+                <th>Math</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+              <td>{props.state.addMissionInfo.physics}</td>
+              <td>{props.state.addMissionInfo.chemistry}</td>
+              <td>{props.state.addMissionInfo.Math}</td>
               </tr>
             </tbody>
           </Table>
