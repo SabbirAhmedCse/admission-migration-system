@@ -1,5 +1,6 @@
 import React from 'react';
-import './SideNavbar.css'
+import './SideNavbar.css';
+import FakeData from './../../FakeData/SideNavbar'
 import { Link } from "react-router-dom";
 import { AiOutlineHome } from "react-icons/ai";
 import { ImList2 } from "react-icons/im";
@@ -11,6 +12,19 @@ const SideNavbar = () => {
 
     return (
         <div>
+          
+
+          <div>
+          {FakeData.map(item => (
+            <div className='m-2 blockquote'>
+              <h4>{item.value}</h4>
+            </div>
+              
+            
+          ))}
+          </div>
+
+
             <div className="mt-2 text-start ps-4"> 
             <NavLink to="/" style={{textDecoration: "none"}}><h6  className="blockquote" >
               <AiOutlineHome className='me-2'></AiOutlineHome> Home
