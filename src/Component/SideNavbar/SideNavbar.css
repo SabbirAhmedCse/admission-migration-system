@@ -1,3 +1,11 @@
 .Blockquote{
     background-image : linear-gradient(to right, #edf5ef63, #f78d7a99);
 }
+.blockquote{
+    padding: 10px 55px;
+    background-color : #FAFAF9;
+    border-radius: 25px;
+    color: black;
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+    0 0  0 2px rgb(255,255,255) , 0.3em 0.3em 1em rgba(0,0,0,0.3);
+  };
