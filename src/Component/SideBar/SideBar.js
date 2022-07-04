@@ -94,7 +94,7 @@ const SideBar = () => {
                   />
                 </div>
 
-                <div style={{ textAlign: "left" }}>
+                <div className="messege">
                   <p>
                     It is my great pleasure to invite you to explore the Jashore
                     University of Science and Technology (JUST) online transport

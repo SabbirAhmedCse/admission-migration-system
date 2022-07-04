@@ -1,0 +1,63 @@
+[
+    {
+        "title": "Home",
+        "icon": "bi bi-house-door-fill",
+        "path" : "/"
+        
+    },
+    {
+        "title": "ApplicantList",
+        "icon": "bi bi-people-fill",
+        "childrens": [
+            {
+                "title": "StudentList",
+                "path": "/applicant-list",
+                "icon" : "bi bi-person-lines-fill"
+            },
+            {
+                "title": "SelectedStudent",
+                "path": "/register",
+                "icon" : "bi bi-check2"
+            },
+            {
+                "title": "Add Student",
+                "path": "/add-student",
+                "icon" : "bi bi-person-plus"
+            }
+        ]
+    },
+    {
+        "title": "DashBoard",
+        "icon": "bi bi-grip-vertical",
+        "childrens": [
+            {
+                "title": "StudentList",
+                "path": "/applicant-list",
+                "icon" : "bi bi-person-lines-fill"
+            },
+            {
+                "title": "SelectedStudent",
+                "path": "/register",
+                "icon" : "bi bi-check2"
+            },
+            {
+                "title": "Add Student",
+                "path": "/add-student",
+                "icon" : "bi bi-person-plus"
+            }
+        ]
+    },
+    {
+        "title": "About",
+        "icon": "bi bi-file-earmark-person-fill",
+        "path" : "/"
+        
+    },
+    {
+        "title": "Students",
+        "icon": "bi bi-house-door-fill",
+        "path" : "/"
+        
+    }
+    
+]
