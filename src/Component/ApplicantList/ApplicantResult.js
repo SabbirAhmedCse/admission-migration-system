@@ -4,29 +4,26 @@ import Documents from "./Documents";
 
 const ApplicantResult = (props) => {
   const {
-    image,
-    studentName,
-    position,
-    AdmissionRoll,
-    fathersName,
-    motherName,
-    District,
+    Photo,
+    Name,
+    Position,
+    Roll,
+    Father,
+    AllottedDepartment,
   } = props.state;
-  const {phy , che, math} = props.state.addMissionInfo;
-  console.log(props.state.addMissionInfo)
+
   return (
     <>
       <div className="col-3">
         <div className="text-center mb-4">
-          <img src={image} alt="" />
+          <img src={Photo} alt="" />
         </div>
         <div className="stdInfo">
-          <h5> Name : {studentName}</h5>
-          <h6>Position : {position}</h6>
-          <h6>Admission Roll : {AdmissionRoll}</h6>
-          <h6>Fathers Name : {fathersName}</h6>
-          <h6>Mothers Name : {motherName}</h6>
-          <h6>District : {District}</h6>
+          <h5> Name : {Name}</h5>
+          <h6>Position : {Position}</h6>
+          <h6>Admission Roll : {Roll}</h6>
+          <h6>Fathers Name : {Father}</h6>
+          <h6>District : {AllottedDepartment}</h6>
         </div>
       </div>
       <div className="col-8">
@@ -74,9 +71,9 @@ const ApplicantResult = (props) => {
             </thead>
             <tbody>
               <tr>
-              <td>{props.state.addMissionInfo.physics}</td>
-              <td>{props.state.addMissionInfo.chemistry}</td>
-              <td>{props.state.addMissionInfo.Math}</td>
+              <td>18</td>
+              <td>15</td>
+              <td>16</td>
               </tr>
             </tbody>
           </Table>

@@ -10,7 +10,7 @@ import {
   ModalFooter,
   Button,
 } from "reactstrap";
-import FakeData from '../../FakeData/FakeData';
+import FakeData from '../../FakeData/FakeData.json' ;
 import SideNavbar from '../SideNavbar/SideNavbar';
 import ApplicantResult from './ApplicantResult';
 
@@ -31,7 +31,7 @@ const ApplicantList = () => {
   };
   const StudentModal = (props) => {
     return (
-      <div>
+      <>
         <Modal
           className="modal-fullscreen"
           isOpen={state.open}
@@ -52,16 +52,16 @@ const ApplicantList = () => {
             </Button>
           </ModalFooter>
         </Modal>
-      </div>
+      </>
     );
   };
 
   const StudentTable = (props) => {
     return (
       <tr>
-        <th scope="row">{props.studentData.position}</th>
-        <td>{props.studentData.AdmissionRoll}</td>
-        <td>{props.studentData.studentName}</td>
+        <th scope="row">{props.studentData.Position}</th>
+        <td>{props.studentData.Roll}</td>
+        <td>{props.studentData.Name}</td>
         <td>CSE</td>
         <td className="fs-3" style={{ color: "green" }}>
           <AiOutlineUserAdd style={{ cursor: "pointer" }} onClick={props.setModal} />
@@ -126,9 +126,9 @@ const ApplicantList = () => {
           <tbody>
             {state.studentData.map((studentData) =>
               state.open ? (
-                <StudentModal key={studentData.id} studentData={studentData} setModal ={() => setModal(studentData)} />
+                <StudentModal key={studentData.Id} studentData={studentData} setModal ={() => setModal(studentData)} />
               ) : (
-                <StudentTable key={studentData.id} studentData={studentData} setModal ={() => setModal(studentData)} />
+                <StudentTable key={studentData.Id} studentData={studentData} setModal ={() => setModal(studentData)} />
               )
             )}
           </tbody>

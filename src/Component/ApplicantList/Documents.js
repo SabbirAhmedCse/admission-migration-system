@@ -142,7 +142,7 @@ class Documents extends Component {
    }
 
   render() {   
-    console.log(this.state.checkedItems) 
+    
     return (
       <>
         {
