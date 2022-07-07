@@ -161,6 +161,20 @@ async function allocate_subject(application_table_id, prev_department_order, pre
         console.log(error);
     }
 }
+async function get_applicant_id_by_position(applicant_position, unit) {          /// incomplete
+    try {
+        let pool = await sql.connect(config);
+        const Query=`"SELECT Id FROM PassedApplicants${unit} WHERE UnitName = '${unit}' AND Position = '${applicant_position}'`;
+               
+        let product = await pool.request()
+            .query(Query);
+        return product.recordsets; 
+
+    }
+    catch (error) {
+        console.log(error);
+    }
+}
 module.exports = {
     get_applicants: get_applicants,
     get_first_position:get_first_position,
@@ -169,6 +183,7 @@ module.exports = {
     get_subject_choices_by_id:get_subject_choices_by_id,
     get_subject_id_by_order:get_subject_id_by_order,
     get_department_status_by_id:get_department_status_by_id,
-    get_departments:get_departments
+    get_departments:get_departments,
+    get_applicant_id_by_position:get_applicant_id_by_position
     
 }
