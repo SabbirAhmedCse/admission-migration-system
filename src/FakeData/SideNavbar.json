@@ -58,6 +58,12 @@
         "icon": "bi bi-house-door-fill",
         "path" : "/"
         
+    },
+    {
+        "title": "Log-In",
+        "icon": "bi bi-box-arrow-in-right",
+        "path" : "/log-in"
+        
     }
     
 ]

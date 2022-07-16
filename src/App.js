@@ -12,10 +12,16 @@ import Navbar from './Component/Navbar.js/Navbar';
 import StudentsChart from './Component/StudentsChart/StudentsChart';
 import DepartmentsCharts from './Component/DepartmentChart/DepartmentsCharts';
 import ApplicantList from './Component/ApplicantList/ApplicantList';
+import LogIn from './Component/LogIn/LogIn';
+import { createContext, useState } from 'react';
+
+
+export const UserContext = createContext();
 
 function App() {
+  const [loggedInUser, setLoggedInUser] = useState({});
   return (
-    <div className='App'>
+    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
            
       <Navbar></Navbar>      
       <Router>
@@ -38,10 +44,13 @@ function App() {
           <Route  path='/applicant-list'>
             <ApplicantList></ApplicantList>
           </Route>
+          <Route  path='/log-in'>
+            <LogIn></LogIn>
+          </Route>
         </Switch>
       </Router>
 
-    </div>
+    </UserContext.Provider>
   );
 }
 

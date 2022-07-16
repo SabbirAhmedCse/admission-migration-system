@@ -1,9 +1,10 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { UserContext } from "../../App";
 import './SideNavbar.css'
 
 export default function SideBarMain({item}){
     const [open, setOpen] = useState(false)
-
+    const [loggedInUser, SetLoggedInUser] = useContext(UserContext);
     
     if(item.childrens){
         return (
@@ -24,7 +25,7 @@ export default function SideBarMain({item}){
         return (
             <a href={item.path || "#"} className="sidebar-item plain">
                 { item.icon && <i className={item.icon}></i> }
-                {item.title}
+                {item.title !== 'Log-In' ?  item.title : loggedInUser.user ? "Log-Out" : "Log-In"}
             </a>
         )
     }
