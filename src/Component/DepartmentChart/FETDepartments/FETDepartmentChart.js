@@ -18,7 +18,7 @@ const DepartmentChart = () => {
     return (
       
           <Container>
-          <h3 className="p-3 mb-3 border-start-0 border-end-0 border border-bottom-dark d-inline-block">
+          <h3 h3 className = "p-3 mb-3 border-start-0 border-end-0 border border-bottom-dark d-inline-block bg-dark" >
           Faculty of Engineering and Technology 
           </h3>
           <BarChart
@@ -39,7 +39,7 @@ const DepartmentChart = () => {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Bar dataKey="Female" stackId="a" fill="#E74C3C" />
+          <Bar dataKey="Female" stackId="a" fill="#2C3E50" />
           <Bar dataKey="Male" stackId="a" fill="#2ECC71" />
         </BarChart>
           </Container>

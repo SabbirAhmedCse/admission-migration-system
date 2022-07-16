@@ -8,12 +8,13 @@ import {
 } from "react-router-dom";
 import Dashboard from './Component/Dashboard/Dashboard';
 import FacultyCharts from './Component/FacultyCharts/FacultyCharts';
-import Navbar from './Component/Navbar.js/Navbar';
+import Navbar from './Component/Navbar/Navbar';
 import StudentsChart from './Component/StudentsChart/StudentsChart';
 import DepartmentsCharts from './Component/DepartmentChart/DepartmentsCharts';
 import ApplicantList from './Component/ApplicantList/ApplicantList';
 import LogIn from './Component/LogIn/LogIn';
 import { createContext, useState } from 'react';
+import PrivateRoute from './Component/PrivetRoute/PrivateRoute';
 
 
 export const UserContext = createContext();
@@ -23,8 +24,9 @@ function App() {
   return (
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
            
-      <Navbar></Navbar>      
+       
       <Router>
+        <Navbar></Navbar>    
         <Switch>
           <Route exact path='/'>
             <Home /> 
@@ -41,9 +43,9 @@ function App() {
           <Route  path='/students-chart'>
             <StudentsChart /> 
           </Route>
-          <Route  path='/applicant-list'>
+          <PrivateRoute  path='/applicant-list'>
             <ApplicantList></ApplicantList>
-          </Route>
+          </PrivateRoute>
           <Route  path='/log-in'>
             <LogIn></LogIn>
           </Route>

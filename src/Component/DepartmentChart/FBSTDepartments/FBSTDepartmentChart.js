@@ -19,7 +19,7 @@ const FBSTDepartmentChart = () => {
     return (
         
           <Container style={{marginTop : "50px"}}>
-          <h3 className="p-3 mb-3 border-start-0 border-end-0 border border-bottom-dark d-inline-block">
+          <h3 h3 className = "p-3 mb-3 border-start-0 border-end-0 border border-bottom-dark d-inline-block bg-dark" >
           Faculty of Applied Science and Technology 
           </h3>
           <BarChart

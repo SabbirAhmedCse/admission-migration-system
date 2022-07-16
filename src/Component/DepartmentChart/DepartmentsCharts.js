@@ -1,7 +1,6 @@
 import React from 'react';
 import FETDepartmentChart from '../DepartmentChart/FETDepartments/FETDepartmentChart'
 import SideNavbar from '../SideNavbar/SideNavbar';
-import FASSDepartmentChart from './FASSDepartments/FASSDepartmentChart';
 import FASTDepartmentChart from './FASTDepartments/FASTDepartmentChart';
 import FBSTDepartmentChart from './FBSTDepartments/FBSTDepartmentChart';
 const DepartmentsCharts = () => {
@@ -23,7 +22,6 @@ const DepartmentsCharts = () => {
                 <FETDepartmentChart></FETDepartmentChart>
                 <FASTDepartmentChart></FASTDepartmentChart>
                 <FBSTDepartmentChart></FBSTDepartmentChart>
-                <FASSDepartmentChart></FASSDepartmentChart>
                 </div>
             </div>
             

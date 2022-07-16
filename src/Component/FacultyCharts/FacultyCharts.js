@@ -36,7 +36,7 @@ const Charts = () => {
           className="col-md-8 py-5 px-3"
         >
           <Container>
-          <h3 className="p-3 mb-3 border-start-0 border-end-0 border border-bottom-dark d-inline-block">
+          <h3 className="p-3 mb-3 border-start-0 border-end-0 border border-bottom-dark d-inline-block bg-dark">
             Faculties Seat Distribution
           </h3>
           <BarChart
@@ -72,7 +72,7 @@ const Charts = () => {
         <div className="col-md-2">
         <div className="d-flex flex-lg-column">
             {data.map((singleData) => (
-              <span className='card m-1'>
+              <span className='card m-1 bg-dark'>
                 <strong>{singleData.name} : </strong>  {singleData.fullName}
               </span>
             ))}
