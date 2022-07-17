@@ -15,6 +15,7 @@ import ApplicantList from './Component/ApplicantList/ApplicantList';
 import LogIn from './Component/LogIn/LogIn';
 import { createContext, useState } from 'react';
 import PrivateRoute from './Component/PrivetRoute/PrivateRoute';
+import SignUp from './Component/SignUp/SignUp';
 
 
 export const UserContext = createContext();
@@ -48,6 +49,9 @@ function App() {
           </PrivateRoute>
           <Route  path='/log-in'>
             <LogIn></LogIn>
+          </Route>
+          <Route path = '/sign-up' >
+            <SignUp></SignUp>
           </Route>
         </Switch>
       </Router>

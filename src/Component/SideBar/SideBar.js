@@ -7,13 +7,7 @@ import Typewriter from "typewriter-effect";
 import Footer from "../Footer/Footer";
 import SideNavbar from "../SideNavbar/SideNavbar";
 const SideBar = () => {
-  const blockquote = {
-    padding: "10px",
-    backgroundColor: "#222e3b",
-    color: "aliceblue",
-    boxShadow: "inset 0 -3em 3em rgba(0,0,0,0.1)",
-    "0 0  0 2px rgb(255,255,255)": "0.3em 0.3em 1em rgba(0,0,0,0.3)",
-  };
+
   return (
     <div>
       <div className="row text-center">
@@ -29,16 +23,9 @@ const SideBar = () => {
             <br />
             <br />
             
-            <h3
-              style={{
-                fontSize: "40px",
-                fontWeight: "bolder",
-                color: "#955b00",
-              }}
-              className="mt-3"
-            >
-              <strong style={{color: "#062657"}}> Welcome To </strong>
-              <div className="mt-3">
+            <h3 className="mt-3 ImageHading">
+              <strong className="wellCome"> Welcome To </strong>
+              <div className="mt-3 universityName">
                 <Typewriter
                   options={{
                     strings: ["Jashore University of Science & Technology"],
@@ -116,7 +103,7 @@ const SideBar = () => {
                     December 27, 2010.
                   </p>
                 </div>
-                <div style={{ textAlign: "end" }}>
+                <div className="vcSir">
                   <p>PROFESSOR DR. MD. ANWAR HOSSAIN</p>
                   <p>Jashore University of Science and Technology</p>
                   <p>Jashore, Bangladesh</p>
@@ -127,7 +114,7 @@ const SideBar = () => {
           <div className="my-4">
             <Counter />
           </div>
-          <div style={blockquote}>
+          <div className="blockquote">
             <Footer></Footer>
           </div>
         </div>

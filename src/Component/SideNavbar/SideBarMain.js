@@ -1,4 +1,5 @@
 import { useContext, useState } from "react"
+import { Link } from "react-router-dom";
 import { UserContext } from "../../App";
 import './SideNavbar.css'
 
@@ -23,10 +24,10 @@ export default function SideBarMain({item}){
         )
     }else{
         return (
-            <a href={item.path || "#"} className="sidebar-item plain">
+            <Link to={item.path || "#"} className="sidebar-item plain">
                 { item.icon && <i className={item.icon}></i> }
                 {item.title !== 'Log-In' ?  item.title : loggedInUser.user ? "Log-Out" : "Log-In"}
-            </a>
+            </Link>
         )
     }
 }

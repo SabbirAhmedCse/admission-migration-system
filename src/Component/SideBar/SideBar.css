@@ -10,3 +10,27 @@
   text-align: left;
   color: black;
 }
+.blockquote{
+    padding: "10px";
+    background-color : #222e3b;
+    color: aliceblue;
+  }
+.vcSir{
+  text-align: "end";
+}
+.ImageHading{
+    font-size: "40px" !important;
+    font-weight: "bolder ";
+    color: #955b00
+}
+.wellCome{
+  color: #062657;
+    font-weight: 900;
+    font-family: cursive;
+    font-size: -webkit-xxx-large;
+}
+.universityName{
+  font-weight: 900;
+    font-family: cursive;
+    font-size: -webkit-xxx-large;
+}
