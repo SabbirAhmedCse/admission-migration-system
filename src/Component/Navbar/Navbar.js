@@ -30,7 +30,7 @@ const Navbar = () => {
                         handleLogOut
                     }
                     className = "d-grid gap-2 mx-auto" >
-                        <h4 className="m-0"> <Link to='/log-in' className='login-btn'>{loggedInUser.email ? 'LogOut' : "LogIn"}</Link> </h4>
+                        <h4 className="m-0 p-2"> <Link to='/log-in' className='login-btn'>{loggedInUser.email ?  'LogOut' : "LogIn"}</Link> </h4>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { PieChart, Pie, Sector } from "recharts";
+import './StudentsChart.css'
 import fakeData from "../../FakeData/StudentsChartsData";
 import SideNavbar from "../SideNavbar/SideNavbar";
 
@@ -108,8 +109,8 @@ export default function StudentsChart() {
             borderRadius: "10px",
           }}
           className="col-md-10  px-3 margin-auto">
-        <h3 className="p-3 mb-3 border-start-0 border-end-0 border border-bottom-dark d-inline-block">
-          Faculty of Engineering and Technology 
+        <h3 className="p-3 mb-3 border-start-0 border-end-0 border border-bottom-dark d-inline-block headline">
+          Male Female Graph 
           </h3>
           <div>
           <PieChart width={420} height={420} style={{margin: 'auto'}}>

@@ -110,10 +110,10 @@ const SignUp = () => {
                     <br />
                     <input className="inputField" type="password" name="confirmPassword" onBlur={handleBlur} placeholder="Confirm password" required />
                     <br />
-                    <input className="inputField" type="submit" value="Create Account" />
+                    <input className="inputField createAccountBtn" type="submit" value="Create Account" />
                 </form>
                 <p>{user.error}</p>
-                {user.succes && <div><p className="success">User created successfully </p> <b> <Link className="link" to='/log-in'> Click Here To LogIn</Link> </b></div>}
+                {user.succes && <div><p className="success">User created successfully </p> <b> <Link className="link" to='/log-in'> Click Here To LogIn </Link> </b></div>}
                 
 
                 <div>

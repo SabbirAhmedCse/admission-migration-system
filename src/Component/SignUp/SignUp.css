@@ -3,11 +3,9 @@
     height: 40px;
     width: 60%;
     margin: 19px;
-    border: 1px solid wheat;
+    border: 1px solid rgb(78, 55, 11);
     border-radius: 10px;
-}
-.link{
-   
+    font-weight: 600;
 }
 .regFormColor{
     background-color: #1d1d19;
@@ -19,4 +17,7 @@
 }
 .success{
     color: green;
+}
+.createAccountBtn{
+    background-color: #4267B2;
 }

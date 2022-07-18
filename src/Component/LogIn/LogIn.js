@@ -145,6 +145,9 @@ const LogIn = () => {
                     var errorCode = error.code;
                     var errorMessage = error.message;
                     console.log(errorCode, errorMessage)
+                    const newUserinfo = { ...user }
+                    newUserinfo.error = errorMessage;
+                    setuser(newUserinfo);
                 });
 
         }
@@ -183,13 +186,13 @@ const LogIn = () => {
             </div>
             <div className="col-md-10 loginComponent">
                         <div className="text-center loginStyle">
-                            <h1>Log In</h1>
+                            <h1> <i class="bi bi-box-arrow-in-right"></i> Log In </h1>
                     <form onSubmit={handleLogIn}>
                         <input className="inputField" type="email" name="email" onBlur={handleBlur} placeholder="Enter your email" required />
                         <br />
                         <input className="inputField" type="password" name="password" onBlur={handleBlur} placeholder="Enter your password" required />
                         <br />
-                        <input className="inputField" type="submit" value="Log In" />
+                        <input className="inputField logInBtn" type="submit" value="Log In" />
                     </form>
                     <p>{user.error}</p>
                     {user.succes && <p className="sucsess">User created successfully</p>}
