@@ -107,11 +107,89 @@ async function get_departments(unit) {          /// incomplete
         console.log(error);
     }
 }
+function abbreviatedMonth(monthNumber)
+{
+    switch(monthNumber)
+    {
+        case 0:
+            return `Jan`;
+        case 1:
+            return `Feb`;
+        case 2:
+            return `Mar`;
+        case 3:
+            return `Apr`;
+        case 4:
+            return `May`;
+        case 5:
+            return `Jun`;
+        case 6:
+            return `Jul`;
+        case 7:
+            return `Aug`;
+        case 8:
+            return `Sep`;
+        case 9:
+            return `Oct`;
+        case 10:
+            return `Nov`;
+        case 11:
+            return `Dec`;
+       
+    }
+}
+function zeropadded(number)
+{
+    if(number<10)
+    {
+        return `0${number}`;
+    }
+    return `${number}`;
+}
+function hourMinuteFormat(x)
+{
+    let hour=x.getHours();
+    let minute=x.getMinutes();
+    let AmPm;
+    if(hour>=0&&hour<=11)
+    {
+        if(hour==0)
+        {
+            hour=12;
+        }
+        AmPm=`AM`;
+    }
+    else{
+        hour-=12;
+        if(hour==0)
+        {
+            hour=12;
+        }
+        AmPm=`PM`;
+    }
+    hour=zeropadded(hour);
+    minute=zeropadded(minute);
+    return `${hour}${miniute}${AmPm}`;
+}
+function properFormate(x)
+{
+    let date=x.getDate();
+    date=zeropadded(date);
+    let month=x.getMonth();
+    month=abbreviatedMonth(month);
+    let time=hourMinuteFormat(x);
+    return `${date}${month}${time}`;
+
+}
 async function allocate_subject(application_table_id, prev_department_order, prev_department_id, unit) {          /// incomplete
     try {
         let pool = await sql.connect(config);
         choices = get_subject_choices_by_id(application_table_id);
         number_of_choices =  Object.keys(choices).length;
+
+        const x=  new Date();
+        const formatedDate=properFormate(x);
+
       /*  x = datetime.now()
         let order = 1;
         while (order <= number_of_choices && order < prev_department_order)
