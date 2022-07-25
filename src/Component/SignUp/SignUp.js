@@ -93,14 +93,13 @@ const SignUp = () => {
 
 
     return (
-        <div className='row'>
-            <div className='col-md-2'>
-                <SideNavbar></SideNavbar>
-            </div>
-            <div className='col-md-10 px-4'>
+        <div className=''>
+            
+            <div className=''>
                 
                 <div className="text-center regFormColor py-5">
-                    <h1> Sign Up </h1>
+                    <h1 className='signUp'> <img src="./sign-up-icon-5.png" alt="icon" className='signUpImg'/> Sign Up </h1>
+
                 <form onSubmit={handleCreateAccount}>
                     <input className="inputField" type="text" name="name" onBlur={handleBlur} placeholder='Enter your Name' required />
                     <br />
@@ -112,13 +111,13 @@ const SignUp = () => {
                     <br />
                     <input className="inputField createAccountBtn" type="submit" value="Create Account" />
                 </form>
-                <p>{user.error}</p>
+                <p className="text-danger">{user.error}</p>
                 {user.succes && <div><p className="success">User created successfully </p> <b> <Link className="link" to='/log-in'> Click Here To LogIn </Link> </b></div>}
                 
 
                 <div>
-                <p>
-                    or
+                <p className = "text-primary" >
+                    Or
                 </p>
                 <button className="btn btn-primary"onClick={handleGoogleSignIn}><FaGoogle className="google"></FaGoogle>Continue with Google</button>
             </div>

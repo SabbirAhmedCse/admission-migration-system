@@ -7,9 +7,11 @@
     text-decoration: none;
 }
 .header{
-    background-color : #222e3b;
-    color: #fff;
+        background-color : #222e3b;
+        color: #fff;
         font-family: cursive;
+        position: fixed;
+        width: 100%;
 }
 
 

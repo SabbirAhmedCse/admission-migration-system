@@ -41,6 +41,21 @@
                 "icon" : "bi bi-check2"
             },
             {
+                "title": "SelectedStudent",
+                "path": "/register",
+                "icon" : "bi bi-check2"
+            },
+            {
+                "title": "SelectedStudent",
+                "path": "/register",
+                "icon" : "bi bi-check2"
+            },
+            {
+                "title": "SelectedStudent",
+                "path": "/register",
+                "icon" : "bi bi-check2"
+            },
+            {
                 "title": "Add Student",
                 "path": "/add-student",
                 "icon" : "bi bi-person-plus"
@@ -59,10 +74,16 @@
         "path" : "/"
         
     },
+        {
+        "title": "Delete",
+        "icon": "bi bi-person-dash",
+        "path" : "/delete"
+        
+    },
     {
-        "title": "Log-In",
-        "icon": "bi bi-box-arrow-in-right",
-        "path" : "/log-in"
+        "title": "Sign-Up",
+        "icon": "bi bi-pencil-square",
+        "path" : "/sign-up"
         
     }
     

@@ -19,9 +19,11 @@
     width: 260px;
     flex-shrink: 0;
     background-color: rgba(22, 22, 22, 1);
-    height: 100%;
-    overflow: auto;
+    height: 98%;
+    overflow: scroll;
     text-align: left;
+    margin-top:100px !important ;
+    position: fixed;
   }
   
   
@@ -33,6 +35,7 @@
   }
   .sidebar-item:hover{
     background-color: rgba(255, 255, 255, .1);
+    text-decoration: none !important;
   }
   
   .sidebar-title{

@@ -5,19 +5,13 @@ import Counter from "../Counter/Counter";
 import { Container } from "reactstrap";
 import Typewriter from "typewriter-effect";
 import Footer from "../Footer/Footer";
-import SideNavbar from "../SideNavbar/SideNavbar";
 const SideBar = () => {
 
   return (
     <div>
-      <div className="row text-center">
-        <div
-          style={{height: "400px"}}
-          className="col-md-2 sticky-top p-0"
-        >
-        <SideNavbar></SideNavbar>
-        </div>
-        <div className="col-md-10">
+      <div className=" text-center">
+        
+        <div className="">
           <div className="backImage">
             <br />
             <br />

@@ -93,7 +93,6 @@ import firebaseConfig from './firebase.config'
 import { UserContext } from '../../App';
 import './LogIn.css'
 import { FaGoogle } from 'react-icons/fa';
-import SideNavbar from '../SideNavbar/SideNavbar';
 
 const LogIn = () => {
     if (!firebase.apps.length) {
@@ -180,13 +179,11 @@ const LogIn = () => {
 
     }
     return (
-        <div className="row">
-            <div className="col-md-2">
-                <SideNavbar></SideNavbar>
-            </div>
-            <div className="col-md-10 loginComponent">
+        <div className="">
+           
+            <div className="loginComponent">
                         <div className="text-center loginStyle">
-                            <h1> <i class="bi bi-box-arrow-in-right"></i> Log In </h1>
+                            <h1 className="text-muted"> <i class="bi bi-box-arrow-in-right text-muted"></i> Log In </h1>
                     <form onSubmit={handleLogIn}>
                         <input className="inputField" type="email" name="email" onBlur={handleBlur} placeholder="Enter your email" required />
                         <br />
@@ -196,9 +193,9 @@ const LogIn = () => {
                     </form>
                     <p>{user.error}</p>
                     {user.succes && <p className="sucsess">User created successfully</p>}
-                    <p>Don't have an account? <Link to='/sign-up'>Create an account</Link> </p>
+                    <p p className = "text-muted" > Don 't have an account? <Link to='/sign-up'>Create an account</Link> </p>
                     <br/>
-                    <p>Or</p>
+                    <p className = "text-primary">Or</p>
                     <br/>
                     <button className="btn btn-primary" onClick={handleGoogleSignIn}><FaGoogle className="google"></FaGoogle> Google Sign in</button>
                 </div>

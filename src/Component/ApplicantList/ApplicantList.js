@@ -37,7 +37,7 @@ const ApplicantList = () => {
           isOpen={state.open}
           toggle={() => setState({ open: false })}
         >
-          <h3 className="text-center mt-5 mb-4">Student Information</h3>
+          <h3 className="text-center mt-5 mb-4 heading">Student Information</h3>
           <ModalBody className="">
             <div className="text-center align-items-center row">
                <ApplicantResult state={state.selectedStudent} />
@@ -87,14 +87,8 @@ const ApplicantList = () => {
   };
 
   return (
-    <div className="row">
-      <div
-          style={{height: "400px"}}
-          className="col-md-2 sticky-top p-0"
-        >
-        <SideNavbar></SideNavbar>
-        </div>
-      <div className="col-md-10">
+    <div>
+      <div>
       <div>
       <div className="">
         <div>

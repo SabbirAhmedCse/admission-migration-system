@@ -8,8 +8,12 @@
     font-weight: 600;
 }
 .regFormColor{
-    background-color: #1d1d19;
+    margin: 40px 175px 0px 175px;
+    background-color: #f4f2ff;
+    box-shadow: rgb(0 0 0 / 20%) 2px 1px 10px 5px;
+    border-radius: 20px;
 }
+
 .google{
     color: rgb(30, 253, 30);
     font-size: 24px;
@@ -20,4 +24,11 @@
 }
 .createAccountBtn{
     background-color: #4267B2;
+}
+.signUp{
+    color: black;
+}
+.signUpImg{
+    height: 50px;
+    width: 50px;
 }
