@@ -5,6 +5,8 @@ import DeleteFakeData from '../../FakeData/DeleteFakeData.json'
 const Delete = () => {
     const [data, setData] = useState(DeleteFakeData);
     const [list, setList] = useState([]);
+    const [check, setCheck] = useState(false);
+
     const handleSingleDelete = (oneByOne) => {
         const newArray = data.filter(singleData => singleData !== oneByOne);
         setData(newArray)
@@ -17,12 +19,23 @@ const Delete = () => {
       
     }
     const deleteSelected =() => {
-        const update = [];
-        data.map(singleStudent => (
-             console.log(list.filter(singleData => singleData !== singleStudent))
-        ))
+       const array1 = data.filter(function (item) {
+            return !list.includes(item);
+        });
+
+        setData(array1);
+        console.log(array1)
         
     };
+    
+     const handleAllCheck = () => {
+        return (
+ " thank you"
+        );
+    };
+
+
+
     
     return(
         
@@ -32,12 +45,12 @@ const Delete = () => {
 
             <div class="card">
                 <div class="card-body">
-
+                    <handleAllCheck />
                     <div class="tableHolder_mail">
                         <table class="table" id='table_filterNameEmail'>
                             <thead>
                                 <tr>
-                                    <th> <input type="checkbox" id='selectAll' /> Select All</th>
+                                    <th> <input onClick={handleAllCheck} type="checkbox" id='selectAll' /> Select All</th>
                                     <th>Name</th>
                                     <th>Email</th>
                                     <th>Action</th>
@@ -47,8 +60,11 @@ const Delete = () => {
                                 {
                                     data.map(oneByOne => (
                                             <tr id={Math.random()}>
-                                                <td td > < input type = 'checkbox'
-                                                class = 'checkbox_insideTBODY '
+                                                <td> <input id = {
+                                                    oneByOne.Name
+                                                }
+                                                type = 'checkbox'
+                                                class = 'checkbox_insideTBODY check'
                                                 onChange = {
                                                     () => handleCheckBox(oneByOne)
                                                 }
